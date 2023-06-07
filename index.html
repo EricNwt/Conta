@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="ícones/icon.ico" type="image/x-icon">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+    <title>Conta</title>
+</head>
+<body>
+    <nav class="centro titulo">
+        <h1 class="titulo">Calculadora de Divisão de Conta</h1>
+    </nav>
+    <nav id="itensParaCalculo">
+        <nav class="centro">
+            <h4>Cliente</h4>
+            <input type="text" class="centro entrada cliente" placeholder="Digite o nome do cliente aqui"><br>
+            <h4>Produto</h4>
+            <input type="text" class="centro entrada produto" placeholder="Digite o nome do produto aqui"><br>
+            <h4>Pagamento</h4>
+            <input type="text" class="centro entrada valor" placeholder="Digite o valor do produto aqui em (R$)"><br>
+        </nav>
+    </nav>
+    <nav class="centro">
+        <button class="btn btn-info text-light" type="button" onclick="adcionarItemParaCalculo()">Adcionar Item</button><br><br>
+        <button class="btn btn-success" type="button" onclick="calculo()">Calcular Conta</button>
+    </nav><br>
+    <nav class="centro" id="calculoFinal"></nav>
+</body>
+</html>
